@@ -2,11 +2,11 @@
   "name": "project_video_app",
   "version": "1.0.0",
   "description": "a backend at chai aur code channel - youtube",
-  "main": "server.js",
+  "main": "./src/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx nodemon server.js"
+    "dev": "npx nodemon ./src/index.js"
   },
   "keywords": [
     "javascript",
@@ -16,6 +16,7 @@
   "author": "Irfan",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "nodemon": "^3.1.9"
   }
