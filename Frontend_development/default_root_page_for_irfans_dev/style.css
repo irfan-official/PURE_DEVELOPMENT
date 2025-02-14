@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #5d5d5d;
+  color: rgb(255, 181, 53);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+}
+h1::selection {
+  background-color: rgba(167, 156, 152, 0.559);
+}
+h4::selection {
+  background-color: rgba(136, 45, 12, 0.559);
+}
+h1 {
+  font-size: 3.5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+h4 {
+  color: rgb(167, 156, 152);
+  font-size: 1.5rem;
+}
+
+#loader {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  z-index: 111;
+  color: white;
+  top: 0;
+  transition: all ease 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#loader svg {
+  width: 500px;
+  height: 500px;
+  scale: 1;
+  overflow: visible;
+}
+
+#loader svg .cls-1 {
+  fill: transparent;
+  stroke: #ffae00;
+  stroke-width: 2;
+  stroke-dasharray: 10000;
+  stroke-dashoffset: 10000;
+  animation: textAnimation 5s linear;
+  visibility: hidden;
+}
+#loader svg .cls-i {
+  animation: textAnimation_i 5s linear;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+#loader svg .cls-rf {
+  animation: textAnimation_rf 5s linear;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+#loader svg .cls-an {
+  animation: textAnimation_an 5s linear;
+  animation-delay: 3.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes textAnimation_i {
+  0% {
+    visibility: visible;
+    stroke-dashoffset: 10000;
+  }
+  100% {
+    visibility: visible;
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes textAnimation_rf {
+  0% {
+    visibility: visible;
+    stroke-dashoffset: 10000;
+  }
+  100% {
+    visibility: visible;
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes textAnimation_an {
+  0% {
+    visibility: visible;
+    stroke-dashoffset: 10000;
+  }
+  100% {
+    visibility: visible;
+    stroke-dashoffset: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+  h4 {
+    color: rgb(167, 156, 152);
+    font-size: 0.8rem;
+  }
+  #loader svg {
+    width: 500px;
+    height: 500px;
+    scale: 0.4;
+    overflow: visible;
+  }
+}
