@@ -1,0 +1,56 @@
+#page2Box {
+  width: 100%;
+  height: 100%;
+  padding: 10vh var(--padding-x-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+}
+
+#page2Box .one {
+  height: 100%;
+  width: 55%;
+  background: #5e5e5e;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page2Box .one img {
+  object-fit: cover;
+  object-position: center;
+  background-position: center;
+  width: 100%;
+}
+
+#page2Box .two {
+  background: #887b7b;
+  width: 45%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+
+#page2Box .two .img {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  /* background: #000; */
+}
+#page2Box .two .txt {
+  width: 100%;
+  height: 20%;
+}
+#page2Box .two .img img {
+  object-fit: cover;
+  object-position: center;
+  background-position: center;
+  /* width: 90%; */
+  height: 100%;
+}

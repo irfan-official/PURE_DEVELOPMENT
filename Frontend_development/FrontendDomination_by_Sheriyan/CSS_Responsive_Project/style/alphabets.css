@@ -1,0 +1,45 @@
+#test {
+  width: 100%;
+  height: 25vw;
+}
+#alphabets {
+  width: 100%;
+  height: 5vw;
+  border: solid black;
+  border-width: 1px 0;
+  margin-top: 2vw;
+  padding: 0 var(--padding-x-main);
+}
+#alphabets span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#alphabets h3 {
+  font-size: 1.5vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: underline;
+}
+
+#alphabets span h4 {
+  font-size: 1vw;
+  font-style: italic;
+  padding: 0.5vw;
+  border-radius: 50%;
+  width: 2vw;
+  height: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+  cursor: pointer;
+}
+#alphabets span h4::selection {
+  background: #965c1071;
+}
+#alphabets span h4:hover {
+  border: 1px solid black;
+}
