@@ -55,7 +55,7 @@ console.log(Math.floor(a / 10)); // get number without last degit
 // console.log(i);
 
 // Math methods return value
-// Math.round(10.3) // 10  // consider .5
+// Math.round(10.3) // 10  // consider >= .5 
 // Math.ceil(10.1) // 11  // consider all time upper value
 // Math.floor(10.9) // 10 // consider all time lowest value
 // Math.truc(18.98) // 18 // remove the after points portion
