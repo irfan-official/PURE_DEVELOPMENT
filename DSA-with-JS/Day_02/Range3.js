@@ -76,11 +76,24 @@ function req(input) {
     let note_count = Math.floor(input / notes_array[count]);
     Notes[notes_array[count]] = note_count;
     Notes["Total Notes"] += note_count;
-    req(input - notes_array[count] * note_count);
+    req(input % notes_array[count]);
   } else {
     req(input);
   }
   return 0;
 }
-req(1723483);
+req(5001);
 console.log(Notes);
+
+// || Logical OR Operator // work on truthy value
+// ?? Nullish Coalescing Operator // Work on !null and !undefined
+// ?. Optional chaining Operator // Work on truthy chaining
+
+// let test = 0;
+
+// let res = test ?? 111;
+
+// console.log(test ?? 111);
+// console.log(test > 0 ? "First cell is running" : "Second cell is running");
+
+// console.log("First cell is running" || "Second cell is running");
