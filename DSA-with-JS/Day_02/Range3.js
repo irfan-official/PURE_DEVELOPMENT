@@ -16,6 +16,7 @@ let Notes = {
   "Total Notes": 0,
 };
 
+// optional; method but it is too big
 // if (input >= 500) {
 //   let res = Math.floor(input / 500);
 //   Notes[500] = res;
@@ -97,3 +98,12 @@ console.log(Notes);
 // console.log(test > 0 ? "First cell is running" : "Second cell is running");
 
 // console.log("First cell is running" || "Second cell is running");
+
+// swap a value using one line
+
+// let a = 1;
+// let b = 67;
+
+// b = a + b - (a = b);
+// console.log("a = ", a);
+// console.log("b = ", b);
