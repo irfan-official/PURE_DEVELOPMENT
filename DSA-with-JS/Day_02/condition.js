@@ -24,6 +24,8 @@
 
 // console.log(typeof NaN);
 
+// Range question
+ 
 let asking_price = Number("7002");
 
 if (isNaN(asking_price)) {
