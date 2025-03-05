@@ -72,5 +72,8 @@ console.log(Math.floor(a / 10)); // get number without last degit
 // Math.random() // return any random float number between 0 to 1
 // variable.toFixed(num) // return variable with num fixed float digit
 
-let yy = 10;
-console.log(yy.toFixed(2))
+let yy = 10.5555;
+console.log(yy.toFixed(1))
+
+
+
