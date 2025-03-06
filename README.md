@@ -31,3 +31,8 @@ print(z)
   }
 </script>
 ```
+| species    | petal_length | sepal_length |
+| ---------- | ------------ | ------------ |
+| virginica  | 18.2         | 10.2         |
+| setosa     | 15.1         | 17.2         |
+| versicolor | 17.2         | 12.2         |
