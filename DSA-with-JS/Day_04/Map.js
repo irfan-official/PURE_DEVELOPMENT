@@ -4,11 +4,11 @@
 let map = new Map();
 
 /*
-1. set.set(key, value)
-2. set.get(key)
-3. set.delete()
-4. set.has()
-5. set.size
+1. map.set(key, value)
+2. map.get(key)
+3. map.delete()
+4. map.has()
+5. map.size
 */
 
 // 1. set the value in map using set method
