@@ -9,6 +9,7 @@ let map = new Map();
 3. map.delete()
 4. map.has()
 5. map.size
+6. map.clear()
 */
 
 // 1. set the value in map using set method

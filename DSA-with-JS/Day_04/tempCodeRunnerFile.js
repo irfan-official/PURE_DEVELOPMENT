@@ -1,18 +1,34 @@
-// claculate the word frequency
+let set = new Set();
 
-let word = "I   am a disko dancer";
+set.has(/*key */); // return boolean
 
-let arr = [...word].filter((value) => value !== " ");
+set.size; // return the size
 
-console.log("a =", arr);
+set.add("name");
+set.add("map");
+set.delete();
+
+console.log(typeof set.values());
+
+set.add(/*value*/);
+set.delete(/* value */);
+set.size;
+set.has(/**value */);
+set.clear(); // clear all the values
+set.values();
 
 let map = new Map();
 
-for (let i = 0; i < arr.length; i++) {
-  map.set(arr[i], (map.get(arr[i]) || 0) + 1);
-}
+map.set(/*key , value*/);
+
+map.get(/* key */);
+
+map.size;
+map.keys();
+map.delete(/* key */);
+
+map.set("name", "Irfan");
+console.log(map);
+map.clear();
 
 console.log(map);
-let resKey = [map.keys()];
-let resVal = [map.values()];
-console.log(resKey, resVal);
